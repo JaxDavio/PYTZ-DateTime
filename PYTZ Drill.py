@@ -25,7 +25,7 @@ new_york = timezone('America/New_York')
 ny_time = datetime.now(new_york)
 new_yorkBranch = int(ny_time.strftime('%H%M%S'))
 
-if new_yorkBranch >= 9 and new_yorkBranch <= 210000:
+if new_yorkBranch >= 90000 and new_yorkBranch <= 210000:
     print ("\nNew York, NY, branch is: Open")
     time.sleep(1)
     print (ny_time.strftime('%m-%d-%Y %H:%M:%S'))
@@ -41,7 +41,7 @@ london = timezone('Europe/London')
 london_time = datetime.now(london)
 londonBranch = int(london_time.strftime('%H%M%S'))
 
-if londonBranch >= 9 and londonBranch <= 210000:
+if londonBranch >= 90000 and londonBranch <= 210000:
     print ("\nLondon, UK, branch is: Open")
     time.sleep(1)
     print (london_time.strftime('%m-%d-%Y %H:%M:%S'))
